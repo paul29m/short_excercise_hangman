@@ -6,4 +6,10 @@ public interface ICharacterProvider {
     *
     * */
     String getProposedCharacter();
+
+    /*
+    * Interrupts the feed of new characters
+    *
+    * */
+    void endProcess();
 }

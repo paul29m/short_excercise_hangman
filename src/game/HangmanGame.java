@@ -82,6 +82,7 @@ public class HangmanGame {
             hangmanDetails = new HangmanDetails(getRandomWord(), 10);
             start();
         }
+        characterProvider.endProcess();
     }
 
     private String getNewCharacter() {

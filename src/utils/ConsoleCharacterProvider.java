@@ -14,4 +14,9 @@ public class ConsoleCharacterProvider implements ICharacterProvider{
     public String getProposedCharacter() {
         return consoleInput.nextLine();
     }
+
+    @Override
+    public void endProcess() {
+        consoleInput.close();
+    }
 }
